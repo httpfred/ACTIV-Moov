@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="body">
+        <header class="header">
+            <div class="header1">
+                <img src="./public/asserts/Moov_Africa_logo.png" alt="" srcset="">
+                <h1>Espace administratif</h1>
+            </div>
+            <div class="header2">
+                <div class="pro" id="pro">
+                    <img class="profil" src="./public/asserts/person-circle.svg" alt="" srcset="">
+                    <!-- <img class="show" src="./public/asserts/caret-down-fill.svg" alt="" srcset=""> -->
+                </div>
+                <!-- <div class="none" id="pop"> -->
+                <div class="none" id="pop">
+                    <ul>
+                        <li>Modifier profil</li>
+                        <li>Deconnection</li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <div class="block2">
+            <nav class="nav">
+                <ul>
+                    <li>Demandes de congés</li>
+                    <li>Autorisations d'absence</li>
+                    <li>Regulation de frais de mission</li>
+                    <li>Frais de mission</li>
+                    <li>Regulation sortie de caisse</li>
+                    <li>Autorisation d'absence</li>
+                    <li>Sortie de caisse</li>
+                </ul>
+            </nav>
+            <section class="block2-change">
+                <section class="sect1">
+                    <h2>Choisir le type de demande</h2>
+                    <div class="sect1-tiret">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </section>
+                <section class="sect-btn">
+                    <button class="btn btn1">
+                        <img src="icon/jour-de-conge.png" alt=""> Demande de congés
+                    </button>
+                    <button class="btn btn2">
+                        <img src="icon/cibler.png" alt="">Regulation de frais de mission
+                    </button>
+                    <button class="btn btn3">
+                        <img src="icon/mission.png" alt=""> Frais de mission
+                    </button>
+                    <button class="btn btn4">
+                        <img src="icon/distributeur-de-billets.png" alt="">Regulation sortie de
+                        caisse
+                    </button>
+                    <button class="btn btn5">
+                        <img src="icon/distributeur-de-billets.png" alt="">Autorisation d'absence
+                    </button>
+                    <button class="btn btn6">
+                        <img src="icon/distributeur-de-billets.png" alt="">Sortie de caisse
+                    </button>
+                </section>
+            </section>
+        </div>
+    </div>
+    <div class="none" id="transition">
+        <span class="close">x</span>
+        <div class="elts">
+            <form action="" method="" class="form" id="form">
+                <div class="form-elts">
+                    <h4>Motif de la demande</h4>
+                    <label>
+                        <input type="text" name="name" placeholder="Nature du congés" />
+                    </label>
+                    <label>
+                        <input type="number" name="name" placeholder="Nombre de Jours" />
+                    </label>
+                    <label>
+                        <input type="date" name="name" placeholder="Date de depart souhaité" />
+                    </label>
+                </div>
+                <div class="form-elts">
+                    <h4>Adresse pendant les congés</h4>
+                    <label>
+                        <input type="text" name="name" placeholder="Domicile habituel"/>
+                    </label>
+                    <label>
+                        <input type="tel" name="name" placeholder="Contact téléphonique" />
+                    </label>
+                    <label>
+                        <input type="text" name="name" placeholder="Personne à contacter"/>
+                    </label>
+                </div>
+                <div class="input-optn">
+                    <a href="index.html" class="Submit">Annuler demande</a>
+                    <!-- <input class="Submit" type="submit" value="Annuler demande" /> -->
+                    <input class="Submit" id="validate" type="submit" value="Valider" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./public/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/styles/style.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="body">
+        <header class="header">
+            <div class="header1">
+                <!-- <img src="./public/asserts/Moov_Africa_logo.png" alt="" srcset=""> -->
+            </div>
+            <div class="header2">
+                <div class="pro" id="pro">
+                    <img class="profil" src="./public/asserts/person-circle.svg" alt="" srcset="">
+                    <!-- <img class="show" src="./public/asserts/caret-down-fill.svg" alt="" srcset=""> -->
+                </div>
+                <div class="none" id="pop">
+                    <ul>
+                        <li>Modifier profil</li>
+                        <li>Se déconnecter</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="block2">
+            <nav class="nav">
+                <ul class="show-color">
+                    <li class="color-0 color-ad" id="color-0">
+                        <img src="./public/asserts/person-vcard-fill.svg" alt="">
+                    </li>
+                    <li class="color-1 color-ad" id="color-1">
+                        <img src="./public/asserts/eye.svg" alt="">
+                    </li>
+                    <li class="color-2 color-ad" id="color-2">
+                        <!-- <img src="./public/asserts/eye.svg" alt=""> -->
+                    </li>
+                    <li class="color-3 color-ad" id="color-3">
+                        <!-- <img src="./public/asserts/eye.svg" alt=""> -->
+                    </li>
+                    <li class="color-4 color-ad" id="color-4">
+                        <!-- <img src="./public/asserts/eye.svg" alt=""> -->
+                    </li>
+                    <li class="color-5 color-ad" id="color-5">
+                        <!-- <img src="./public/asserts/eye.svg" alt=""> -->
+                    </li>
+                    <li class="color-6 color-ad" id="color-6">
+                        <!-- <img src="./public/asserts/eye.svg" alt=""> -->
+                    </li>
+                </ul>
+            </nav>
+            <section class="block2-change2">
+                <div class="search">
+                    <input type="search" placeholder="                 Retrouver une demande ici">
+                    <!-- <img src="./public/asserts/search.svg" alt=""> -->
+                </div>
+                <h2 class="bord-title">Tableau de bord</h2>
+                <div class="help">
+                    <div class="help-elts">
+                        <span class="color color-1"></span>
+                        <span class="valeur">Demande de congés</span>
+                    </div>
+                    <div class="help-elts">
+                        <span class="color color-2"></span>
+                        <span class="valeur">Autorisations d'absence</span>
+                    </div>
+                    <div class="help-elts">
+                        <span class="color color-3"></span>
+                        <span class="valeur">Regulation de frais de mission </span>
+                    </div>
+                    <div class="help-elts">
+                        <span class="color color-4"></span>
+                        <span class="valeur">Frais de mission</span>
+                    </div>
+                    <div class="help-elts">
+                        <span class="color color-5"></span>
+                        <span class="valeur">Regulation sortie de caisse</span>
+                    </div>
+                    <div class="help-elts">
+                        <span class="color color-6"></span>
+                        <span class="valeur">Sortie de caisse</span>
+                    </div>
+
+                </div>
+                <section class="sect1">
+                    <h3>Choisir le type de document</h3>
+                </section>
+                <section class="sect-btn">
+                    <button class="btn btn1" id="demande">
+                        Demande de congés
+                    </button>
+                    <button class="btn btn2">
+                        Regulation de frais de mission
+                    </button>
+                    <button class="btn btn3">
+                        Frais de mission
+                    </button>
+                    <button class="btn btn4">
+                        Regulation sortie de caisse
+                    </button>
+                    <button class="btn btn5">
+                        Autorisation d'absence
+                    </button>
+                    <button class="btn btn6">
+                        Sortie de caisse
+                    </button>
+                </section>
+                <section class="sect1">
+                    <h3>Historique</h3>
+                </section>
+                <div>
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <th>N°</th>
+                                <th>Nature</th>
+                                <th>Etat</th>
+                                <th>Date</th>
+                            </tr>
+                            <tr class="rang">
+                                <td>1</td>
+                                <td>Demande de congés</td>
+                                <td><span class="wait">En cours</span></td>
+                                <td>20/02/2023</td>
+                            </tr>
+                            <tr class="rang">
+                                <td>2</td>
+                                <td>Frais de mission</td>
+                                <td><span class="succed">Effectuée</span></td>
+                                <td>05/04/2023</td>
+                            </tr>
+                            <tr class="rang">
+                                <td>3</td>
+                                <td>Frais de mission</td>
+                                <td><span class="closed">Rejetée</span></td>
+                                <td>10/12/2021</td>
+                            </tr>
+                            <tr class="rang">
+                                <td>4</td>
+                                <td>Frais de mission</td>
+                                <td><span class="closed">Rejetée</span></td>
+                                <td>10/10/2021</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="none" id="transition">
+        <span class="none" id="close">x</span>
+        <div class="elts">
+            <form action="" method="" class="form" id="form">
+                <div class="elts">
+                    <fieldset class="form-elts">
+                        <legend>Informations personnelles</legend>
+                        <label>
+                            Matricule
+                            <input type="text" name="name" placeholder="" />
+                        </label>
+                        <label>
+                            Nom & Prénoms
+                            <input type="number" name="name" placeholder="" />
+                        </label>
+                    </fieldset>
+                    <fieldset class="form-elts">
+                        <legend>
+                            Informations Administratif
+                        </legend>
+                        <label>
+                            Categorie
+                            <input type="text" name="name" placeholder="" />
+                        </label>
+                        <label>
+                            Direction
+                            <input type="text" name="name" placeholder="" />
+                        </label>
+                        <label>
+                            Division
+                            <input type="text" name="name" placeholder="" />
+                        </label>
+                        <label>
+                            Service
+                            <input type="text" name="name" placeholder="" />
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="input-optn">
+                    <input class="Submit" id="validate" type="submit" value="Modifier" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./public/js/index.js"></script>
+</body>
+
+</html>

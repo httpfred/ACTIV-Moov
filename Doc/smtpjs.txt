@@ -1,0 +1,39 @@
+// JS pour envoie de mail
+// Lien tuto : https://www.youtube.com/watch?v=MV-Aqkjju64
+// Lien SMTP.js : https://smtpjs.com/
+
+  const submit = document.getElementById('myForm'),
+            emailAdmin = document.getElementById('email-admin'),
+            prenomAdmin = document.getElementById('prenom-admin'),
+            nomAdmin = document.getElementById('nom-admin'),
+            telAdmin = document.getElementById('tel-admin'),
+            entreprise = document.getElementById('raison-sociale');
+            defaultMDP = "bdgfe!";
+
+        submit.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // format text 
+            let ebody = `
+            <b>Chez </b> ${prenomAdmin.value} 
+            <br/>
+            <b>L'enregistrement votre entreprise sur Pointis à été un succès</>
+            <br/>
+            <b>Vous indentifiants de connexion sont :<b/>
+            <br/>
+            <b>Login : </b> ${emailAdmin.value} 
+            <br/>
+            <b>Mot de passe : </b> ${defaultMDP} 
+            <br/> `
+
+            // Use token method
+            Email.send({
+                SecureToken: "193b80ea-7547-40a3-bafa-b8eb082adeb5",
+                To: 'pointisapp@gmail.com',
+                From: emailAdmin.value,
+                Subject: "Enregistrement " + entreprise.value + " sur POINTIS",
+                Body: ebody
+            }).then(
+                message => alert(message)
+            );
+        });

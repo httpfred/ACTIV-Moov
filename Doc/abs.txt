@@ -1,0 +1,15 @@
+ function calculerHeuresAbsence(heureArrivee, heureDepart, heureDebutTravail, heureFinTravail) {
+            const heureDebut = new Date(`1970-01-01T${heureDebutTravail}`);
+            const heureFin = new Date(`1970-01-01T${heureFinTravail}`);
+            const heureArriveeObj = new Date(`1970-01-01T${heureArrivee}`);
+            const heureDepartObj = new Date(`1970-01-01T${heureDepart}`);
+
+            const minutesTravail = (heureFin - heureDebut) / 60000; // Calculer la durée de travail en minutes
+            const minutesAbsence = (heureArriveeObj - heureDebut) / 60000 + (heureFin - heureDepartObj) / 60000; // Calculer la durée d'absence en minutes
+            const heuresAbsence = minutesAbsence / 60; // Convertir les minutes d'absence en heures
+
+            return heuresAbsence.toFixed(2); // Retourner le résultat avec deux décimales
+        }
+
+        const heuresAbsence = calculerHeuresAbsence("08:30", "18:30", "08:00", "18:00");
+        console.log(`Vous avez ${heuresAbsence} heures d'absence.`);
